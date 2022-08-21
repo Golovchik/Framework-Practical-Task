@@ -5,7 +5,7 @@ class TabsComponent extends BaseComponent {
         super('md-tabs');
     };
 
-    itemIcon(text) {
+    item(text) {
         const alphabet = 'abcdefghijklmnopqrstuvwxyz';
         const alphabetUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         // eslint-disable-next-line max-len

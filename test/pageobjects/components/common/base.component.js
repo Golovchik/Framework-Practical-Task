@@ -7,7 +7,7 @@ class BaseComponent {
         return $(this.rootSelector);
     };
 
-    submitEnter() {
+    submit() {
         browser.performActions([{
             type: 'key',
             id: 'keyboard',

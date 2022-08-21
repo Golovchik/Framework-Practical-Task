@@ -6,17 +6,26 @@ describe('Test', function() {
         await page('home').header
             .input('searchField')
             .setValue('Google Cloud Platform Pricing Calculator');
-        await page('home').header.submitEnter();
+        await page('home').header.submit();
 
         await page('searchResults').searchItems
             .itemRef('Google Cloud Platform Pricing Calculator').click();
 
-        const f1 = await $('//devsite-iframe//iframe');
-        await browser.switchToFrame(f1);
-        const f2 = await $('#myFrame');
-        await browser.switchToFrame((f2));
+        //await browser.switchToWindow();
+        //const f1 = await $('//devsite-iframe//iframe');
+        //await browser.switchToFrame(f1);
+        //const f2 = await $('#myFrame');
+        //await browser.switchToFrame((f2));
+        await page('pricingCalculator').goToFrames();
         await page('pricingCalculator').tabs
-            .itemIcon('COMPUTE ENGINE').click();
+            .item('COMPUTE ENGINE').click();
+
+        await page('pricingCalculator').getOutOfFrames();
+        //const handles = await browser.getWindowHandles();
+        //await browser.switchToWindow(handles[0]);
+        //await browser.switchToParentFrame();
+        //await browser.switchToParentFrame();
+        //await browser.switchToParentFrame();
     });
 });
 
