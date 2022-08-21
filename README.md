@@ -60,6 +60,20 @@ Automate tests from Automation tools - WebdriverIO and the following test cases:
 
 9. Check that the rental amount per month matches the amount received when passing the test manually.
 
+//
+Region: Frankfurt
+2,920 total hours per month
+Commitment term: 1 Year
+Provisioning model: Regular
+Instance type: n1-standard-8
+Committed Use Discount applied
+USD 899.76
+Operating System / Software: Free
+Local SSD: 2x375 GiB
+Committed Use Discount applied
+USD 181.44
+Estimated Component Cost: USD 1,081.20 per 1 month
+Total Estimated Cost: USD 1,081.20 per 1 month
 ﻿
 
 ## [Hardcore]
