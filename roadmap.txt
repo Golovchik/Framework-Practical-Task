@@ -1,0 +1,16 @@
+npm init -y
+npx eslint --init
+npm i eslint --save-dev
+npm i mocha --save-dev
+npm i chai --save-dev
+npm init wdio
+
+npm install geckodriver --save-dev
+npm install wdio-geckodriver-service --save-dev
+
+npm install moment --save-dev
+
+npm install @wdio/junit-reporter --save-dev
+npm install dotenv --save-dev
+
+1.WebdriverIO for configuring connection to a browser

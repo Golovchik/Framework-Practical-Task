@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Hurt Me Plenty" timestamp="2022-08-31T15:10:08" time="20.767" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hurt Me Plenty"/>
+      <property name="capabilities" value="chrome.104_0_5112_102.windows"/>
+      <property name="file" value=".\test\specs\e2e.spec.js"/>
+    </properties>
+    <testcase classname="chrome.104_0_5112_102.windows.Hurt_Me_Plenty" name="should matches amount received when passing the test manually" time="0.109">
+      <system-out><![CDATA[
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/00570494-f885-4cac-905d-2f96a9b7542f/element - {"using":"xpath","value":"//div//b[contains(text(),\"Estimated Component Cost:\")]"}
+RESULT: {"using":"xpath","value":"//div//b[contains(text(),\"Estimated Component Cost:\")]"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1dee0686-e2c7-4149-990a-22f1830649fd","ELEMENT":"1dee0686-e2c7-4149-990a-22f1830649fd"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1dee0686-e2c7-4149-990a-22f1830649fd","ELEMENT":"1dee0686-e2c7-4149-990a-22f1830649fd"}]}
+COMMAND: GET /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/1dee0686-e2c7-4149-990a-22f1830649fd/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Pricing colculator corresponded the data entered and received estimate fields" timestamp="2022-08-31T15:10:29" time="0.199" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Pricing colculator corresponded the data entered and received estimate fields"/>
+      <property name="capabilities" value="chrome.104_0_5112_102.windows"/>
+      <property name="file" value=".\test\specs\e2e.spec.js"/>
+    </properties>
+    <testcase classname="chrome.104_0_5112_102.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field VM Class" time="0.044">
+      <system-out><![CDATA[
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/00570494-f885-4cac-905d-2f96a9b7542f/element - {"using":"xpath","value":"//div[contains(text(),\"Provisioning model:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Provisioning model:\")]"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f217025e-003a-4a37-97df-5db60b929cf7","ELEMENT":"f217025e-003a-4a37-97df-5db60b929cf7"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f217025e-003a-4a37-97df-5db60b929cf7","ELEMENT":"f217025e-003a-4a37-97df-5db60b929cf7"}]}
+COMMAND: GET /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/f217025e-003a-4a37-97df-5db60b929cf7/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.104_0_5112_102.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field Instance type" time="0.047">
+      <system-out><![CDATA[
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/00570494-f885-4cac-905d-2f96a9b7542f/element - {"using":"xpath","value":"//div[contains(text(),\"Instance type:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Instance type:\")]"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d379e6c8-3e94-4c0a-a914-bd4df906073b","ELEMENT":"d379e6c8-3e94-4c0a-a914-bd4df906073b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d379e6c8-3e94-4c0a-a914-bd4df906073b","ELEMENT":"d379e6c8-3e94-4c0a-a914-bd4df906073b"}]}
+COMMAND: GET /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/d379e6c8-3e94-4c0a-a914-bd4df906073b/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.104_0_5112_102.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field Region" time="0.034">
+      <system-out><![CDATA[
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/00570494-f885-4cac-905d-2f96a9b7542f/element - {"using":"xpath","value":"//div[contains(text(),\"Region:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Region:\")]"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5a677eb0-bc97-4518-8007-0e8e8c57c9d4","ELEMENT":"5a677eb0-bc97-4518-8007-0e8e8c57c9d4"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"5a677eb0-bc97-4518-8007-0e8e8c57c9d4","ELEMENT":"5a677eb0-bc97-4518-8007-0e8e8c57c9d4"}]}
+COMMAND: GET /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/5a677eb0-bc97-4518-8007-0e8e8c57c9d4/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.104_0_5112_102.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field local SSD" time="0.035">
+      <system-out><![CDATA[
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/00570494-f885-4cac-905d-2f96a9b7542f/element - {"using":"xpath","value":"//div[contains(text(),\"Local SSD:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Local SSD:\")]"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0c1e2dbb-51cc-4885-918e-bac800020e48","ELEMENT":"0c1e2dbb-51cc-4885-918e-bac800020e48"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0c1e2dbb-51cc-4885-918e-bac800020e48","ELEMENT":"0c1e2dbb-51cc-4885-918e-bac800020e48"}]}
+COMMAND: GET /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/0c1e2dbb-51cc-4885-918e-bac800020e48/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.104_0_5112_102.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field commitment term" time="0.037">
+      <system-out><![CDATA[
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/00570494-f885-4cac-905d-2f96a9b7542f/element - {"using":"xpath","value":"//div[contains(text(),\"Commitment term:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Commitment term:\")]"}
+COMMAND: POST /session/eb2a93f67dc66c6e51d7094f85d55cb9/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dfcf6f71-cd53-4c1e-825e-a0b627b6ca49","ELEMENT":"dfcf6f71-cd53-4c1e-825e-a0b627b6ca49"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dfcf6f71-cd53-4c1e-825e-a0b627b6ca49","ELEMENT":"dfcf6f71-cd53-4c1e-825e-a0b627b6ca49"}]}
+COMMAND: GET /session/eb2a93f67dc66c6e51d7094f85d55cb9/element/dfcf6f71-cd53-4c1e-825e-a0b627b6ca49/text - {}
+RESULT: {}
+COMMAND: DELETE /session/eb2a93f67dc66c6e51d7094f85d55cb9 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

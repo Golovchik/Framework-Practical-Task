@@ -8,9 +8,13 @@ class TabBlockComponent extends BaseComponent {
         this.computeEngineForm = new ComputeEngineFormComponent();
     };
 
-    get addToEstimate() {
-        return this.rootEl('button[aria-label="Add to Estimate"]');
-    }
+    get addToEstimateBtn() {
+        return this.rootEl.$('button[aria-label="Add to Estimate"]');
+    };
+
+    getSelectValue(text) {
+        return browser.$(`//body/div/md-select-menu//md-option//div[normalize-space(text())='${text}']`);
+    };
 };
 
 module.exports = TabBlockComponent;

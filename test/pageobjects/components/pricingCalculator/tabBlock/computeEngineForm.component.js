@@ -6,32 +6,27 @@ class ComputeEngineFormComponent extends BaseComponent {
         super('form[name=ComputeEngineForm]');
     };
 
+    getlocationtValue(text) {
+        return browser.$(`//md-select-menu//md-option[contains(@ng-repeat,'.computeServer')]//div[normalize-space(text())='${text}']`);
+    };
+
     item(name) {
         const selectors = {
-            numberOfInstancesInput: '#input_2099',
-            whatAreTheseInstancesInput: '#input_2100',
-
-            operatingSystemSelect: '#select_value_label_2091',
-
-            classVMSelect: '#select_value_label_2092',
-
-            instanceSerieSelect: '#select_value_label_82',
-            instanceTypeSelect: '#select_value_label_83',
-
-            instanceTypeCheckbox: '[ng-model="listingCtrl.computeServer.addGPUs"]',
-
-            typeOfGPUSelect: 'select_value_label_457',
-
-            numberOfGPUsSelect: 'select_value_label_458',
-
-            localSSDSelect: 'select_value_label_415',
-
-            datacenterlocationSelect: 'select_value_label_85',
-
-            commitedUsageSelect: 'select_value_label_86',
+            quantity: 'input[ng-model="listingCtrl.computeServer.quantity"]',
+            label: 'input[ng-model="listingCtrl.computeServer.label"]',
+            os: '[ng-model="listingCtrl.computeServer.os"]',
+            class: '[ng-model="listingCtrl.computeServer.class"]',
+            series: '[ng-model="listingCtrl.computeServer.series"]',
+            instance: '[ng-model="listingCtrl.computeServer.instance"]',
+            addGPUs: '[ng-model="listingCtrl.computeServer.addGPUs"]',
+            gpuType: '[ng-model="listingCtrl.computeServer.gpuType"]',
+            gpuCount: '[ng-model="listingCtrl.computeServer.gpuCount"]',
+            ssd: '[ng-model="listingCtrl.computeServer.ssd"]',
+            location: '[ng-model="listingCtrl.computeServer.location"]',
+            cud: '[ng-model="listingCtrl.computeServer.cud"]',
 
         };
-        return this.rootEl(selectors[name]);
+        return this.rootEl.$(selectors[name]);
     };
 }
 

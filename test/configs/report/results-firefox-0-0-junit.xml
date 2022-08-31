@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Hurt Me Plenty" timestamp="2022-08-31T15:12:55" time="21.606" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Hurt Me Plenty"/>
+      <property name="capabilities" value="firefox.104_0_1.windows"/>
+      <property name="file" value=".\test\specs\e2e.spec.js"/>
+    </properties>
+    <testcase classname="firefox.104_0_1.windows.Hurt_Me_Plenty" name="should matches amount received when passing the test manually" time="0.165">
+      <system-out><![CDATA[
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/20a25a00-ae81-43f4-a447-cd63a93d1013/element - {"using":"xpath","value":"//div//b[contains(text(),\"Estimated Component Cost:\")]"}
+RESULT: {"using":"xpath","value":"//div//b[contains(text(),\"Estimated Component Cost:\")]"}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/68478f1f-0bbd-43e0-8f19-387379e8e247/displayed - {}
+RESULT: {}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/68478f1f-0bbd-43e0-8f19-387379e8e247/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Pricing colculator corresponded the data entered and received estimate fields" timestamp="2022-08-31T15:13:17" time="0.152" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Pricing colculator corresponded the data entered and received estimate fields"/>
+      <property name="capabilities" value="firefox.104_0_1.windows"/>
+      <property name="file" value=".\test\specs\e2e.spec.js"/>
+    </properties>
+    <testcase classname="firefox.104_0_1.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field VM Class" time="0.038">
+      <system-out><![CDATA[
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/20a25a00-ae81-43f4-a447-cd63a93d1013/element - {"using":"xpath","value":"//div[contains(text(),\"Provisioning model:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Provisioning model:\")]"}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/5b8ea238-7540-409e-97e7-ebdf9d36bf77/displayed - {}
+RESULT: {}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/5b8ea238-7540-409e-97e7-ebdf9d36bf77/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.104_0_1.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field Instance type" time="0.023">
+      <system-out><![CDATA[
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/20a25a00-ae81-43f4-a447-cd63a93d1013/element - {"using":"xpath","value":"//div[contains(text(),\"Instance type:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Instance type:\")]"}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/b269c624-9bca-400e-817c-f0ac7fd56234/displayed - {}
+RESULT: {}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/b269c624-9bca-400e-817c-f0ac7fd56234/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.104_0_1.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field Region" time="0.023">
+      <system-out><![CDATA[
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/20a25a00-ae81-43f4-a447-cd63a93d1013/element - {"using":"xpath","value":"//div[contains(text(),\"Region:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Region:\")]"}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/9cc46ef7-f69e-4bdf-9ae0-84c0b69ed807/displayed - {}
+RESULT: {}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/9cc46ef7-f69e-4bdf-9ae0-84c0b69ed807/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.104_0_1.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field local SSD" time="0.04">
+      <system-out><![CDATA[
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/20a25a00-ae81-43f4-a447-cd63a93d1013/element - {"using":"xpath","value":"//div[contains(text(),\"Local SSD:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Local SSD:\")]"}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/5cb4abd0-7c3c-4673-bb27-16c4afeac295/displayed - {}
+RESULT: {}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/5cb4abd0-7c3c-4673-bb27-16c4afeac295/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.104_0_1.windows.Hurt_Me_Plenty.Pricing_colculator_corresponded_the_data_entered_and_received_estimate_fields" name="should corresponded field commitment term" time="0.026">
+      <system-out><![CDATA[
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element - {"using":"css selector","value":"md-content #compute"}
+RESULT: {"using":"css selector","value":"md-content #compute"}
+COMMAND: POST /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/20a25a00-ae81-43f4-a447-cd63a93d1013/element - {"using":"xpath","value":"//div[contains(text(),\"Commitment term:\")]"}
+RESULT: {"using":"xpath","value":"//div[contains(text(),\"Commitment term:\")]"}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/f8907e76-7d60-4bc6-bddf-70b8737d90cd/displayed - {}
+RESULT: {}
+COMMAND: GET /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae/element/f8907e76-7d60-4bc6-bddf-70b8737d90cd/text - {}
+RESULT: {}
+COMMAND: DELETE /session/ba62d882-6aa3-4c18-af4e-4be2dae35fae - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
