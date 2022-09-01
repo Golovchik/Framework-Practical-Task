@@ -1,9 +1,11 @@
 const fs = require("fs");
 const moment = require('moment');
 const dirPathScreenshots = "./test/configs/report/screenshots";
-//require('dotenv').config();
+const dirPathReport = "./test/configs/report";
+const yargs = require('yargs');
 
-const browserName = process.env.BROWSER_NAME || 'chrome';
+//const browserName = process.env.BROWSER_NAME || 'chrome';
+const browserName = yargs.argv.BROWSER_NAME || 'chrome';
 
 exports.config = {
   //
@@ -162,10 +164,12 @@ exports.config = {
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: ["spec", ['junit', {
-    outputDir: './test/configs/report',
+    outputDir: dirPathReport, //'./test/configs/report',
     outputFileFormat: function(options) {
         return `results-${options.capabilities.browserName}-${options.cid}-junit.xml`
-    }
+    },
+    skipPublishingChecks: true, 
+    skipMarkingBuildUnstable:true
 }]],
 
   //
@@ -200,6 +204,18 @@ exports.config = {
           }
         });
         fs.rmdirSync(dirPathScreenshots);
+      } 
+
+      if (fs.existsSync(dirPathReport)) {
+        files = fs.readdirSync(dirPathReport);
+        files.forEach(function(file, index) {
+          let curPath = dirPathReport + "/" + file;
+          if(fs.statSync(curPath).isDirectory()) {
+           removeFolder(curPath);
+          } else {
+           fs.unlinkSync(curPath);
+          }
+        });
       } 
     },
   /**
@@ -285,6 +301,7 @@ exports.config = {
     afterTest: async (test, context, {error, result, duration, passed, retries}) => {
       if (error) {
         const filename = `${test.title} ${moment().format('YYYY-MM-DD_H-mm-ss')}.png`;
+        //const filename = `abc.png`;
         if (!fs.existsSync(dirPathScreenshots)) {
           fs.mkdirSync(dirPathScreenshots, {recursive: true});
         }

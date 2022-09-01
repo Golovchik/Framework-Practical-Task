@@ -137,6 +137,8 @@ describe('Hurt Me Plenty', function() {
         await mailMessageRefEl.waitForDisplayed({timeout: 100000, interval: 5000, timeoutMsg: 'The letter has not arrived'});
         await mailMessageRefEl.click();
 
+        await browser.switchToFrame(await $('//iframe[@id="iframe"]'));
+
         const totalEstimatedCostEl = await page('tempailEmail').tempailContent.totalEstimatedCost;
         await totalEstimatedCostEl.waitForDisplayed();
         const textTotalEstimatedCost = await totalEstimatedCostEl.getText();

@@ -10,7 +10,7 @@ class TempailContentComponent extends BaseComponent {
     }
 
     get mailMessageRef() {
-        return this.rootEl.$('#epostalar li:nth-child(2)');
+        return this.rootEl.$('#epostalar li:nth-child(2) a');
     }
 
     get totalEstimatedCost() {

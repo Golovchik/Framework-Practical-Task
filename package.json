@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
-        "test:e2e": "set BROWSER_NAME=firefox&& wdio run wdio.conf.js --spec test/specs/e2e.spec.js",
-        "test:smoke": "wdio run wdio.conf.js --suite smoke",
-        "test:otherFeature": "wdio run wdio.conf.js --suite otherFeature"
+        "test:e2e": "wdio run wdio.conf.js --spec test/specs/e2e.spec.js",
+        "test:smoke": "wdio run wdio.conf.js -- --suite smoke",
+        "test:otherFeature": "wdio run wdio.conf.js -- --suite otherFeature"
     },
     "repository": {
         "type": "git",
@@ -34,6 +34,7 @@
         "geckodriver": "^3.0.2",
         "moment": "^2.29.4",
         "wdio-chromedriver-service": "^7.3.2",
-        "wdio-geckodriver-service": "^3.0.3"
+        "wdio-geckodriver-service": "^3.0.3",
+        "yargs": "^17.5.1"
     }
 }

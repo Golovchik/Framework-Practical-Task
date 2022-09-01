@@ -12,5 +12,13 @@ npm install moment --save-dev
 
 npm install @wdio/junit-reporter --save-dev
 npm install dotenv --save-dev
+npm install yargs --save-dev
 
 1.WebdriverIO for configuring connection to a browser
+
+// set BROWSER_NAME=firefox&&
+//const browserName = process.env.BROWSER_NAME || 'chrome';
+
+// add --BROWSER_NAME='firefox'
+const browserName = yargs.argv.BROWSER_NAME || 'chrome';
+// npm run test:e2e -- --BROWSER_NAME=firefox
