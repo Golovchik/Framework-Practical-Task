@@ -146,11 +146,10 @@ describe('Hurt Me Plenty', function() {
     });
 
     it('should matches amount received when passing the test manually', async () => {
-        const costRental = ' 1,840.40 ';
         const costEstimateEl = await page('pricingCalculator').estimateBlock.computeEngineEstimate.item('cost');
         await costEstimateEl.waitForDisplayed();
         const textCostEstimateEl = await costEstimateEl.getText();
 
-        expect(textCostEstimateEl).to.include(costRental);
+        expect(textCostEstimateEl).to.include(dataLayer.expectedCost);
     });
 });

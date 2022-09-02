@@ -36,11 +36,11 @@ exports.config = {
   ],
   suites: {
     smoke: [
-        './test/specs/smoke.spec.js'
+        './test/specs/smoke.spec.js',
     ],
     otherFeature: [
-        './test/specs/e2e.spec.js'
-    ]
+        './test/specs/e2e.spec.js',
+    ],
   },
   //
   // ============

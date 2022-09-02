@@ -6,8 +6,8 @@
     "scripts": {
         "wdio": "wdio run wdio.conf.js",
         "test:e2e": "wdio run wdio.conf.js --spec test/specs/e2e.spec.js",
-        "test:smoke": "wdio run wdio.conf.js -- --suite smoke",
-        "test:otherFeature": "wdio run wdio.conf.js -- --suite otherFeature"
+        "test:smoke": "wdio run wdio.conf.js --suite smoke",
+        "test:otherFeature": "wdio run wdio.conf.js --suite otherFeature"
     },
     "repository": {
         "type": "git",
