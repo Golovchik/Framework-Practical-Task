@@ -4,17 +4,14 @@ npm i eslint --save-dev
 npm i mocha --save-dev
 npm i chai --save-dev
 npm init wdio
-
 npm install geckodriver --save-dev
 npm install wdio-geckodriver-service --save-dev
-
 npm install moment --save-dev
-
 npm install @wdio/junit-reporter --save-dev
 npm install dotenv --save-dev
 npm install yargs --save-dev
 
-1.WebdriverIO for configuring connection to a browser
+
 
 // set BROWSER_NAME=firefox&&
 //const browserName = process.env.BROWSER_NAME || 'chrome';
